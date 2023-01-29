@@ -17,14 +17,6 @@ jobs:
       -
         uses: docker/build-push-action@v3
         with:
-          context: ./docker-node
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
-          push: false
-          tags: test-node:6.2.2
-      -
-        uses: docker/build-push-action@v3
-        with:
           context: .
           cache-from: type=gha
           cache-to: type=gha,mode=max
