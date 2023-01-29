@@ -19,7 +19,7 @@ jobs:
 #        run: docker build . --file Dockerfile --tag snappy:$(date +%s) --memory 1024m
 #      -
         name: Build the Docker image
-        run: docker buildx . --file Dockerfile --tag snappy:$(date +%s) --cache-from type=gha --cache-to type=gha,mode=max --memory 1024m
+        run: docker buildx . --file Dockerfile --tag snappy:$(date +%s) --cache-from type=gha --cache-to type=gha,mode=max --memory 2048m
       -
         name: Archive production artifacts
         uses: actions/upload-artifact@v3
