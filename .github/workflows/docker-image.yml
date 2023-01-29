@@ -24,7 +24,3 @@ jobs:
           name: dist-test
           path: |
             dist
-
-
-                      cache-from: type=gha
-          cache-to: type=gha,mode=max
