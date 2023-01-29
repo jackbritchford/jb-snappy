@@ -60,7 +60,7 @@ RUN yarn run build
 #pip3 install -r < requirements.txt
 #make
 
-FROM nginx:1.23.3-alpine AS test
+FROM nginx:1.23.3-alpine
 
 #WORKDIR /usr/share/nginx/html
 RUN ls /usr/share/nginx/html
